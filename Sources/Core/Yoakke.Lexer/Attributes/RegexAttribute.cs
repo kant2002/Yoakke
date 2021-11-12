@@ -4,26 +4,25 @@
 
 using System;
 
-namespace Yoakke.Lexer.Attributes
+namespace Yoakke.Lexer.Attributes;
+
+/// <summary>
+/// An attribute to define a token type in terms of a regular expression.
+/// </summary>
+[AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+public class RegexAttribute : Attribute
 {
     /// <summary>
-    /// An attribute to define a token type in terms of a regular expression.
+    /// The regex to match the token.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
-    public class RegexAttribute : Attribute
-    {
-        /// <summary>
-        /// The regex to match the token.
-        /// </summary>
-        public string Regex { get; set; }
+    public string Regex { get; set; }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RegexAttribute"/> class.
-        /// </summary>
-        /// <param name="regex">The regular expression.</param>
-        public RegexAttribute(string regex)
-        {
-            this.Regex = regex;
-        }
+    /// <summary>
+    /// Initializes a new instance of the <see cref="RegexAttribute"/> class.
+    /// </summary>
+    /// <param name="regex">The regular expression.</param>
+    public RegexAttribute(string regex)
+    {
+        this.Regex = regex;
     }
 }

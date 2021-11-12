@@ -48,7 +48,7 @@ namespace Yoakke.Parser.Generator.Syntax
         /// <returns>The next <see cref="BnfToken"/> lexed from the input.</returns>
         public BnfToken Next()
         {
-            begin:
+        begin:
             if (this.index >= this.source.Length) return new BnfToken(this.index, string.Empty, BnfTokenType.End);
 
             var ch = this.source[this.index];
@@ -60,13 +60,13 @@ namespace Yoakke.Parser.Generator.Syntax
 
             switch (ch)
             {
-            case ':': return this.Make(1, BnfTokenType.Colon);
-            case '|': return this.Make(1, BnfTokenType.Pipe);
-            case '*': return this.Make(1, BnfTokenType.Star);
-            case '+': return this.Make(1, BnfTokenType.Plus);
-            case '?': return this.Make(1, BnfTokenType.QuestionMark);
-            case '(': return this.Make(1, BnfTokenType.OpenParen);
-            case ')': return this.Make(1, BnfTokenType.CloseParen);
+                case ':': return this.Make(1, BnfTokenType.Colon);
+                case '|': return this.Make(1, BnfTokenType.Pipe);
+                case '*': return this.Make(1, BnfTokenType.Star);
+                case '+': return this.Make(1, BnfTokenType.Plus);
+                case '?': return this.Make(1, BnfTokenType.QuestionMark);
+                case '(': return this.Make(1, BnfTokenType.OpenParen);
+                case ')': return this.Make(1, BnfTokenType.CloseParen);
             }
 
             // String literal

@@ -162,7 +162,7 @@ namespace Yoakke.Parser.Generator
                 if (remainingCycles.Count == 0) break;
 
                 var used = false;
-                for (var i = 0; i < remainingCycles.Count; )
+                for (var i = 0; i < remainingCycles.Count;)
                 {
                     if (remainingCycles[i].Contains(rule))
                     {

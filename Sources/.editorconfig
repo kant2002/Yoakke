@@ -22,7 +22,7 @@ indent_style = space
 #Formatting - indentation options
 
 #do not indent switch case contents.
-csharp_indent_case_contents =true
+csharp_indent_case_contents = true
 #do not indent switch labels
 csharp_indent_switch_labels = false
 
@@ -141,42 +141,19 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 #Style - qualification options
 
 #prefer fields to be prefaced with this. in C# or Me. in Visual Basic
-dotnet_style_qualification_for_field = true:suggestion
+dotnet_style_qualification_for_field = true:warning
 #prefer methods to be prefaced with this. in C# or Me. in Visual Basic
-dotnet_style_qualification_for_method = true:suggestion
+dotnet_style_qualification_for_method = true:warning
 #prefer properties to be prefaced with this. in C# or Me. in Visual Basic
-dotnet_style_qualification_for_property = true:suggestion
+dotnet_style_qualification_for_property = true:warning
+#prefer events to be prefaced with this. in C# or Me. in Visual Basic
+dotnet_style_qualification_for_event = true:warning
 
-# Analyzer settings
-dotnet_diagnostic.SA0001.severity = none
-dotnet_diagnostic.SA1000.severity = none
-dotnet_diagnostic.SA1008.severity = none
-dotnet_diagnostic.SA1009.severity = none
-dotnet_diagnostic.SA1011.severity = none
-dotnet_diagnostic.SA1100.severity = none
-dotnet_diagnostic.SA1123.severity = none
-dotnet_diagnostic.SA1124.severity = none
-dotnet_diagnostic.SA1134.severity = none
-dotnet_diagnostic.SA1200.severity = none
-dotnet_diagnostic.SA1201.severity = none
-dotnet_diagnostic.SA1202.severity = none
-dotnet_diagnostic.SA1204.severity = none
-dotnet_diagnostic.SA1313.severity = none
-dotnet_diagnostic.SA1402.severity = none
-dotnet_diagnostic.SA1501.severity = none
-dotnet_diagnostic.SA1503.severity = none
-dotnet_diagnostic.SA1513.severity = none
-dotnet_diagnostic.SA1515.severity = none
-dotnet_diagnostic.SA1601.severity = none
-dotnet_diagnostic.SA1623.severity = none
-dotnet_diagnostic.SA1633.severity = none
+# Warn on trailing whitespace
+dotnet_diagnostic.IDE0055.severity = warning
 
-# We have some weird interaction between source generators and included sources when
-# trying to put this in Tests/.editorconfig
-[Tests/**.cs]
-dotnet_diagnostic.SA1116.severity = none
-dotnet_diagnostic.SA1117.severity = none
-dotnet_diagnostic.SA1118.severity = none
-dotnet_diagnostic.SA1137.severity = none
-dotnet_diagnostic.SA1600.severity = none
-dotnet_diagnostic.SA1602.severity = none
+# Warn on Using directive is unnecessary
+dotnet_diagnostic.IDE0005.severity = warning
+
+# IDE0160: Convert to file-scoped namespace
+csharp_style_namespace_declarations = file_scoped:warning

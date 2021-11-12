@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Xunit;
 using Yoakke.Text;
 using Kind = Yoakke.C.Syntax.CTokenType;

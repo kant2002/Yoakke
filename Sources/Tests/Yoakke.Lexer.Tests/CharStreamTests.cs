@@ -39,7 +39,7 @@ namespace Yoakke.Lexer.Tests
             /// <inheritdoc/>
             public Token<TokenType> Next()
             {
-                begin:
+            begin:
                 if (this.IsEnd) return this.charStream.ConsumeToken(TokenType.End, 0);
                 if (char.IsWhiteSpace(this.charStream.Peek()))
                 {

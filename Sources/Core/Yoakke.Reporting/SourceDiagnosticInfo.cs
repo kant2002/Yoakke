@@ -4,22 +4,21 @@
 
 using Yoakke.Text;
 
-namespace Yoakke.Reporting
+namespace Yoakke.Reporting;
+
+/// <summary>
+/// A <see cref="IDiagnosticInfo"/> that references part of the source code.
+/// </summary>
+public class SourceDiagnosticInfo : IDiagnosticInfo
 {
+    /// <inheritdoc/>
+    public Severity? Severity { get; set; }
+
+    /// <inheritdoc/>
+    public string? Message { get; set; }
+
     /// <summary>
-    /// A <see cref="IDiagnosticInfo"/> that references part of the source code.
+    /// The location the diagnostic information refers to.
     /// </summary>
-    public class SourceDiagnosticInfo : IDiagnosticInfo
-    {
-        /// <inheritdoc/>
-        public Severity? Severity { get; set; }
-
-        /// <inheritdoc/>
-        public string? Message { get; set; }
-
-        /// <summary>
-        /// The location the diagnostic information refers to.
-        /// </summary>
-        public Location Location { get; set; }
-    }
+    public Location Location { get; set; }
 }
