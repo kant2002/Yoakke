@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Context
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Context
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Ir.Model.Context">
+  
+  
+  <h1 id="Yoakke_Ir_Model_Context" data-uid="Yoakke.Ir.Model.Context" class="text-break">Class Context
+  </h1>
+  <div class="markdown level0 summary"><p>A context for storing key information about the IR configuration.
+For example, this stores all attribute definitions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Context</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Ir.Model.html">Yoakke.Ir.Model</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Ir.dll</h6>
+  <h5 id="Yoakke_Ir_Model_Context_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Context : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_GetAttributeDefinition_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.GetAttributeDefinition(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L78">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_GetAttributeDefinition_" data-uid="Yoakke.Ir.Model.Context.GetAttributeDefinition*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_GetAttributeDefinition_System_String_" data-uid="Yoakke.Ir.Model.Context.GetAttributeDefinition(System.String)">GetAttributeDefinition(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a> for a given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAttributeDefinition GetAttributeDefinition(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a></td>
+        <td><p>The found <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_GetInstructionSyntax_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.GetInstructionSyntax(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L85">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_GetInstructionSyntax_" data-uid="Yoakke.Ir.Model.Context.GetInstructionSyntax*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_GetInstructionSyntax_System_String_" data-uid="Yoakke.Ir.Model.Context.GetInstructionSyntax(System.String)">GetInstructionSyntax(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a> for a given instruction name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInstructionSyntax GetInstructionSyntax(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the instruction to retrieve syntax for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a></td>
+        <td><p>The found <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_GetInstructionSyntax_System_Type_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.GetInstructionSyntax(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L92">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_GetInstructionSyntax_" data-uid="Yoakke.Ir.Model.Context.GetInstructionSyntax*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_GetInstructionSyntax_System_Type_" data-uid="Yoakke.Ir.Model.Context.GetInstructionSyntax(System.Type)">GetInstructionSyntax(System.Type)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a> for a given instruction implementation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInstructionSyntax GetInstructionSyntax(System.Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the instruction to retrieve syntax for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a></td>
+        <td><p>The found <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_GetTypeDefinition_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.GetTypeDefinition(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L99">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_GetTypeDefinition_" data-uid="Yoakke.Ir.Model.Context.GetTypeDefinition*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_GetTypeDefinition_System_String_" data-uid="Yoakke.Ir.Model.Context.GetTypeDefinition(System.String)">GetTypeDefinition(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a <see cref="!:Type"></see> for a given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetTypeDefinition(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the type to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><p>The found <see cref="!:Type"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_WithAttributeDefinition_Yoakke_Ir_Model_Attributes_IAttributeDefinition_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.WithAttributeDefinition(Yoakke.Ir.Model.Attributes.IAttributeDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L28">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_WithAttributeDefinition_" data-uid="Yoakke.Ir.Model.Context.WithAttributeDefinition*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_WithAttributeDefinition_Yoakke_Ir_Model_Attributes_IAttributeDefinition_" data-uid="Yoakke.Ir.Model.Context.WithAttributeDefinition(Yoakke.Ir.Model.Attributes.IAttributeDefinition)">WithAttributeDefinition(IAttributeDefinition)</h4>
+  <div class="markdown level1 summary"><p>Registers an <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a> in this <a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context WithAttributeDefinition(IAttributeDefinition definition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a></td>
+        <td><span class="parametername">definition</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeDefinition.html">IAttributeDefinition</a> to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_WithInstructionSyntax_Yoakke_Ir_Syntax_IInstructionSyntax_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.WithInstructionSyntax(Yoakke.Ir.Syntax.IInstructionSyntax)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L39">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_WithInstructionSyntax_" data-uid="Yoakke.Ir.Model.Context.WithInstructionSyntax*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_WithInstructionSyntax_Yoakke_Ir_Syntax_IInstructionSyntax_" data-uid="Yoakke.Ir.Model.Context.WithInstructionSyntax(Yoakke.Ir.Syntax.IInstructionSyntax)">WithInstructionSyntax(IInstructionSyntax)</h4>
+  <div class="markdown level1 summary"><p>Registers an <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a> in this <a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context WithInstructionSyntax(IInstructionSyntax syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a> to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_WithInstructionSyntax__1_System_String_Func_Yoakke_Ir_Syntax_IrParser___0__Action___0_Yoakke_Ir_Syntax_IrWriter__.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.WithInstructionSyntax%60%601(System.String%2CFunc%7BYoakke.Ir.Syntax.IrParser%2C%60%600%7D%2CAction%7B%60%600%2CYoakke.Ir.Syntax.IrWriter%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L54">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_WithInstructionSyntax_" data-uid="Yoakke.Ir.Model.Context.WithInstructionSyntax*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_WithInstructionSyntax__1_System_String_Func_Yoakke_Ir_Syntax_IrParser___0__Action___0_Yoakke_Ir_Syntax_IrWriter__" data-uid="Yoakke.Ir.Model.Context.WithInstructionSyntax``1(System.String,Func{Yoakke.Ir.Syntax.IrParser,``0},Action{``0,Yoakke.Ir.Syntax.IrWriter})">WithInstructionSyntax&lt;TInstruction&gt;(String, Func&lt;IrParser, TInstruction&gt;, Action&lt;TInstruction, IrWriter&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an <a class="xref" href="Yoakke.Ir.Syntax.IInstructionSyntax.html">IInstructionSyntax</a> in this <a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context WithInstructionSyntax&lt;TInstruction&gt;(string name, Func&lt;IrParser, TInstruction&gt; parse, Action&lt;TInstruction, IrWriter&gt; print)
+    where TInstruction : Instruction</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The handled instruction name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Yoakke.Ir.Syntax.IrParser.html">IrParser</a>, TInstruction&gt;</td>
+        <td><span class="parametername">parse</span></td>
+        <td><p>The parser function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;TInstruction, <a class="xref" href="Yoakke.Ir.Syntax.IrWriter.html">IrWriter</a>&gt;</td>
+        <td><span class="parametername">print</span></td>
+        <td><p>The print function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TInstruction</span></td>
+        <td><p>The handled instruction type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context_WithTypeDefinition_System_String_Type_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context.WithTypeDefinition(System.String%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L67">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Context_WithTypeDefinition_" data-uid="Yoakke.Ir.Model.Context.WithTypeDefinition*"></a>
+  <h4 id="Yoakke_Ir_Model_Context_WithTypeDefinition_System_String_Type_" data-uid="Yoakke.Ir.Model.Context.WithTypeDefinition(System.String,Type)">WithTypeDefinition(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Registers a <see cref="!:Type"></see> in this <a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context WithTypeDefinition(string name, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <see cref="!:Type"></see> to register.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The <see cref="!:Type"></see> to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Context.html">Context</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Context.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Context.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

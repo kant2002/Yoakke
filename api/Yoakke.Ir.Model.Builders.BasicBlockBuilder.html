@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BasicBlockBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BasicBlockBuilder
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder">
+  
+  
+  <h1 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder" class="text-break">Class BasicBlockBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>A builder for <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html">BasicBlock</a>s.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Yoakke.Ir.Model.BasicBlock.html">BasicBlock</a></div>
+    <div class="level2"><span class="xref">BasicBlockBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeTarget.html">IAttributeTarget</a></div>
+    <div><a class="xref" href="Yoakke.Ir.Model.Attributes.IReadOnlyAttributeTarget.html">IReadOnlyAttributeTarget</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_Name">BasicBlock.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_Instructions">BasicBlock.Instructions</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_Flag">BasicBlock.Flag</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_GetAttributes">BasicBlock.GetAttributes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_GetAttributes_System_String_">BasicBlock.GetAttributes(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_GetAttributes__1">BasicBlock.GetAttributes&lt;TAttrib&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_TryGetAttribute_System_String_Yoakke_Ir_Model_Attributes_IAttribute__">BasicBlock.TryGetAttribute(String, IAttribute)</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_TryGetAttribute__1___0__">BasicBlock.TryGetAttribute&lt;TAttrib&gt;(TAttrib)</a>
+    </div>
+    <div>
+      <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html#Yoakke_Ir_Model_BasicBlock_AddAttribute_Yoakke_Ir_Model_Attributes_IAttribute_">BasicBlock.AddAttribute(IAttribute)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Ir.Model.Builders.html">Yoakke.Ir.Model.Builders</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Ir.dll</h6>
+  <h5 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BasicBlockBuilder : BasicBlock, IAttributeTarget, IReadOnlyAttributeTarget</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder__ctor_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.%23ctor(System.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L18">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder__ctor_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.#ctor*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder__ctor_System_Nullable_System_String__" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.#ctor(System.Nullable{System.String})">BasicBlockBuilder(Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Ir.Model.Builders.BasicBlockBuilder.html">BasicBlockBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlockBuilder(string? name = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The suggested name of the basic block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder_Add_Value_Value_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.Add(Value%2CValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L62">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Add_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Add*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Add_Value_Value_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Add(Value,Value)">Add(Value, Value)</h4>
+  <div class="markdown level1 summary"><p>Writes an ADD instruction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlockBuilder Add(Value left, Value right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Value</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first value to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Value</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second value to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Builders.BasicBlockBuilder.html">BasicBlockBuilder</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder_Build.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.Build%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L27">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Build_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Build*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Build" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Build">Build()</h4>
+  <div class="markdown level1 summary"><p>Builds a copy <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html">BasicBlock</a> of this builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlock Build()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.BasicBlock.html">BasicBlock</a></td>
+        <td><p>The built <a class="xref" href="Yoakke.Ir.Model.BasicBlock.html">BasicBlock</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder_Nop.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.Nop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L48">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Nop_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Nop*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Nop" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Nop">Nop()</h4>
+  <div class="markdown level1 summary"><p>Writes a NOP instruction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlockBuilder Nop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Builders.BasicBlockBuilder.html">BasicBlockBuilder</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder_Ret.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.Ret%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L54">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Ret_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Ret*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_Ret" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.Ret">Ret()</h4>
+  <div class="markdown level1 summary"><p>Writes a RET instruction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlockBuilder Ret()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Builders.BasicBlockBuilder.html">BasicBlockBuilder</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder_WithInstruction_Instruction_.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder.WithInstruction(Instruction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L38">View Source</a>
+  </span>
+  <a id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_WithInstruction_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.WithInstruction*"></a>
+  <h4 id="Yoakke_Ir_Model_Builders_BasicBlockBuilder_WithInstruction_Instruction_" data-uid="Yoakke.Ir.Model.Builders.BasicBlockBuilder.WithInstruction(Instruction)">WithInstruction(Instruction)</h4>
+  <div class="markdown level1 summary"><p>Adds an instruction to this block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicBlockBuilder WithInstruction(Instruction instruction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Instruction</span></td>
+        <td><span class="parametername">instruction</span></td>
+        <td><p>The instruction to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Ir.Model.Builders.BasicBlockBuilder.html">BasicBlockBuilder</a></td>
+        <td><p>This instance, to be able to chain calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yoakke.Ir.Model.Attributes.IAttributeTarget.html">IAttributeTarget</a>
+  </div>
+  <div>
+      <a class="xref" href="Yoakke.Ir.Model.Attributes.IReadOnlyAttributeTarget.html">IReadOnlyAttributeTarget</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Ir_Model_Builders_BasicBlockBuilder.md&amp;value=---%0Auid%3A%20Yoakke.Ir.Model.Builders.BasicBlockBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Ir/Model/Builders/BasicBlockBuilder.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
